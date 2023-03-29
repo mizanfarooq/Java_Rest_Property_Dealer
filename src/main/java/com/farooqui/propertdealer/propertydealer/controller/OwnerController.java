@@ -24,6 +24,7 @@ public class OwnerController {
 	Logger logger = LogManager.getLogger(OwnerController.class);
 	@RequestMapping(value="home", method = RequestMethod.GET)
 	public InitialData HomePage(){
+		// log message
 		 logger.info("An INFO Message");
 		 logger.warn("A WARN Message");
 		 logger.error("An ERROR Message");
