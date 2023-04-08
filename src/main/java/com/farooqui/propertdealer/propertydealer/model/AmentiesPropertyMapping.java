@@ -9,35 +9,37 @@ import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name="amenties_property_mapping")
+@Table(name = "amenties_property_mapping")
 public class AmentiesPropertyMapping {
-	
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int id;
-	
+	private Integer id;
+
 	@ManyToOne
 	@JoinColumn(name = "amenities_id")
-	private Amenities amenities ;
-	
+	private Amenities amenities;
+
 	@ManyToOne
 	@JoinColumn(name = "property_id")
 	private Property property;
+
 	public AmentiesPropertyMapping() {
-		
+
 	}
-	public AmentiesPropertyMapping(int id, Amenities amenities, Property property) {
+
+	public AmentiesPropertyMapping(Integer id, Amenities amenities, Property property) {
 		super();
 		this.id = id;
 		this.amenities = amenities;
 		this.property = property;
 	}
 
-	public int getId() {
+	public Integer getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
 
@@ -62,5 +64,4 @@ public class AmentiesPropertyMapping {
 		return "AmentiesPropertyMapping [id=" + id + ", amenities=" + amenities + ", property=" + property + "]";
 	}
 
-	
 }

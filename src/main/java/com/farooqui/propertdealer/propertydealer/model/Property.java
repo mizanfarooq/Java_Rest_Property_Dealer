@@ -15,7 +15,7 @@ import jakarta.persistence.Table;
 public class Property {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int id;
+	private Integer id;
 	
 	@ManyToOne
 	@JoinColumn(name = "owner_id")
@@ -40,7 +40,7 @@ public class Property {
 	public Property() {
 		
 	}
-	public Property(int id, Owner owner, PropertyType type, String price, int age, String floor, String current_status,
+	public Property(Integer id, Owner owner, PropertyType type, String price, int age, String floor, String current_status,
 			String area, String configuration, String street, String address1, String adress2, String city,
 			String state, long zip) {
 		super();
@@ -60,10 +60,10 @@ public class Property {
 		this.state = state;
 		this.zip = zip;
 	}
-	public int getId() {
+	public Integer getId() {
 		return id;
 	}
-	public void setId(int id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
 	public Owner getOwner() {
