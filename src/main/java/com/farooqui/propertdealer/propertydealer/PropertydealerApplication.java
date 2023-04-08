@@ -9,7 +9,4 @@ public class PropertydealerApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(PropertydealerApplication.class, args);
 	}
-
-	
-	
 }

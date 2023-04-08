@@ -12,20 +12,20 @@ public class OwnerType {
 	
 	@Id
 	@GeneratedValue (strategy = GenerationType.IDENTITY)
-	private int id;
+	private Integer id;
 	private String owner_type;
 	public OwnerType() {
 		
 	}
-	public OwnerType(int id, String owner_type) {
+	public OwnerType(Integer id, String owner_type) {
 		super();
 		this.id = id;
 		this.owner_type = owner_type;
 	}
-	public int getId() {
+	public Integer getId() {
 		return id;
 	}
-	public void setId(int id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
 	public String getOwner_type() {

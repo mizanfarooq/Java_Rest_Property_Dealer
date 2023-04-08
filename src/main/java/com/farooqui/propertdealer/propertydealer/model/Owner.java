@@ -10,7 +10,7 @@ import jakarta.persistence.Table;
 public class Owner {
 	@Id
 	@GeneratedValue (strategy = GenerationType.IDENTITY)
-	private int id;
+	private Integer id;
 	private String name;
 	private String address;
 	private String phone;
@@ -19,7 +19,7 @@ public class Owner {
 	public Owner() {
 		
 	}
-	public Owner(int id, String name, String address, String phone, String email) {
+	public Owner(Integer id, String name, String address, String phone, String email) {
 		super();
 		this.id = id;
 		this.name = name;
@@ -27,10 +27,10 @@ public class Owner {
 		this.phone = phone;
 		this.email = email;
 	}
-	public int getId() {
+	public Integer getId() {
 		return id;
 	}
-	public void setId(int id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
 	public String getName() {

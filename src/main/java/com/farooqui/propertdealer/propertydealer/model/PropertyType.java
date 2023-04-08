@@ -12,20 +12,20 @@ public class PropertyType {
 	
 	@Id
 	@GeneratedValue (strategy = GenerationType.IDENTITY)
-	private int id;
+	private Integer id;
 	private String p_type;
 	public PropertyType() {
 		
 	}
-	public PropertyType(int id, String p_type) {
+	public PropertyType(Integer id, String p_type) {
 		super();
 		this.id = id;
 		this.p_type = p_type;
 	}
-	public int getId() {
+	public Integer getId() {
 		return id;
 	}
-	public void setId(int id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
 	public String getP_type() {

@@ -12,20 +12,20 @@ public class ConstructionStatus {
 	
 	@Id
 	@GeneratedValue (strategy = GenerationType.IDENTITY)
-	private int id;
+	private Integer id;
 	private String satus;
 	public ConstructionStatus() {
 		
 	}
-	public ConstructionStatus(int id, String satus) {
+	public ConstructionStatus(Integer id, String satus) {
 		super();
 		this.id = id;
 		this.satus = satus;
 	}
-	public int getId() {
+	public Integer getId() {
 		return id;
 	}
-	public void setId(int id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
 	public String getSatus() {

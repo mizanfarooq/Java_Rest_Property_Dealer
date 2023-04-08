@@ -14,7 +14,7 @@ public class Images {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int id;
+	private Integer id;
 	
 	@ManyToOne
 	@JoinColumn(name = "property_id")
@@ -24,18 +24,18 @@ public class Images {
 	public Images() {
 		
 	}
-	public Images(int id, Property property, String image_path) {
+	public Images(Integer id, Property property, String image_path) {
 		super();
 		this.id = id;
 		this.property = property;
 		this.image_path = image_path;
 	}
 
-	public int getId() {
+	public Integer getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
 
